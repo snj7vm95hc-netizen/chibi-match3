@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ff7aa8"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>Chibi Match 3</title>
+</head>
+<body>
+<main class="app">
+<header><div><div class="eyebrow">KAWAII PUZZLE GAME</div><h1>✨ Chibi Match 3</h1></div><button id="restart" class="restart">↻ ပြန်စမယ်</button></header>
+<section class="stats">
+<div><small>LEVEL</small><b id="level">1</b></div><div><small>အမှတ် SCORE</small><b id="score">0</b></div><div><small>ကျန်အလှည့်</small><b id="moves">20</b></div>
+</section>
+<section class="goal"><span class="targetIcon">🎯</span><div class="goalText"><b id="goalTitle">Level 1 ရည်မှန်းချက်</b><small>ပုံတူ Chibi <strong id="target">15</strong> ပုံကို တွဲပါ</small></div><div class="progressBox"><div id="progress"></div></div></section>
+<p id="message" class="message">တူညီတဲ့ လူရုပ်ပုံ ၃ ပုံနဲ့အထက်ကို တွဲလိုက်ပါ 💖</p>
+<section id="board" class="board" aria-label="Chibi Match 3 board"></section>
+<p class="hint">👆 ကပ်လျက်ရှိတဲ့ ပုံ ၂ ပုံကို တစ်ပုံပြီးတစ်ပုံ နှိပ်ပြီး နေရာလဲပါ။</p>
+<section id="endPanel" class="end hidden"><div id="endEmoji" class="endEmoji">🏆</div><h2 id="endTitle">အဆင့်ပြီးပါပြီ!</h2><p id="endText"></p><button id="next" class="primary">နောက်အဆင့် ▶</button></section>
+<footer>🌸 ယောက်ျားလေးနဲ့ မိန်းကလေး Chibi သူငယ်ချင်းများ 🌸</footer>
+</main><script src="game.js"></script>
+<script>if('serviceWorker' in navigator && location.protocol.startsWith('http')) addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
+</body></html>
